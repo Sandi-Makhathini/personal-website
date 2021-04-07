@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='UTF-8'>
+  <title>Portfolio Homepage</title>
+  <link href="webstyle.css"  rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav-wrapper">
+      <div class="left-side">
+        <div class="nav-link">
+          <a href="index.html">Contact Details</a>
+        </div>
+
+        <div class="nav-link">
+          <a href="personalwebsite.html">About Me</a>
+        </div>
+      </div>
+
+      <div class="right-side">
+        <div class="brand">
+          SANDI MAKHATHINI
+        </div>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+        <div class="three-column-wrapper">
+          <div class="image-web-wrapper">
+              <img src="images/contact-details.PNG" alt="">
+          </div>
+        </div>
+                    
+    </div>
+  </body>
+ 
+ 
+
+</body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            console.log(portfolioItem);
+        })
+    })
+</script>
+
+</html>
